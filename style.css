@@ -27,6 +27,7 @@
     justify-content: center;
     text-align: center;
     
+    
 }
 .three{
     border:1px solid black;
@@ -71,7 +72,7 @@
     text-align: center;
     
 }
-@media(max-width:600px)
+@media(max-width:600px)  
 {
     .parent{
         display: flex;
@@ -79,22 +80,78 @@
     }
     .one{
         height: 60px;
-        background-image: url();
+       
+        animation-name: one;
+        animation-duration: 2s;
+        
     }
     .two{
         height: 60px;
+        animation-name: two;
+        animation-duration: 2s
     }
     .three{
         height: 220px;
+        animation-name: three;
+        animation-duration: 2s
     }
     .four{
         height: 120px;
+        animation-name: four;
+        animation-duration: 2s
     }
     .five{
         height: 120px;
+        animation-name: five;
+        animation-duration: 2s
     }
     .six{
         height: 80px;
+        animation-name: six;
+        animation-duration: 2s;
 
     }
+    @keyframes one {
+        from{
+            transform: translatey(-50px);
+            
+        }
+        
+    }
+    @keyframes two {
+        from{
+            transform: translatex(50px);
+            
+        }
+        
+    }
+    @keyframes three {
+        from{
+            transform: translatex(50px);
+            
+        }
+        
+    }
+    @keyframes four {
+        from{
+            transform: translatex(-50px);
+            
+        }
+        
+    }
+    @keyframes five {
+        from{
+            transform: translatex(-50px);
+            
+        }
+        
+    }
+    @keyframes six {
+        from{
+            transform: translatey(50px);
+            
+        }
+        
+    }
+
 }
